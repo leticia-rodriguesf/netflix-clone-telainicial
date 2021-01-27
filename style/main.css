@@ -1,0 +1,287 @@
+:root{ /*Declarando uma variavel*/
+    --preto: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Faz com que os elementos fiquem da forma que você pediu, não rompendo o limite da caixa*/
+    
+}
+
+/*Elementos Base:*/
+body{
+    background: var(--preto); /*Variavel que nós criamos lá em cima*/
+    font-family: 'Times New Roman', Times, serif;
+    color: #FFF;
+}
+
+
+header .container{
+    display: flex; /*Utiliza a Flex box, alinhando os elementos na tela, jogando tudo para uma linha*/
+    flex-direction: row;
+    align-items: center;
+    padding: 0 2px;
+}
+
+.container{ /* BARRA FIXA */
+    background-color: var(--preto);
+    min-width: 100%;
+    position:fixed;
+    z-index:999; /*Deixa sobre os outros*/
+    left:0;
+    right: 0;
+    top:0;
+    overflow:hidden;
+}
+
+header .container ul{
+    align-items: center;
+    display: flex;
+    margin: 10px;
+    margin-left: 30px;
+    font-size: 16px;
+    margin-right: 467px;
+}
+
+.nav-left{
+    display: flex;
+    float: left;
+    position: relative;
+    top: 14px;
+    justify-content:space-evenly; /*Alinha os elementos - Space Between*/
+}
+
+ul .nav-right{
+    display: flex;
+    float: right;
+    text-align: right;
+    justify-content: space-between;
+
+}
+
+.perfil{
+    width: 40px;
+    border-radius: 5px;
+}
+
+.container li{
+    margin-right: 10px;
+    list-style-type:none;
+}
+
+header{
+    padding: 8px 0;
+    
+}
+
+header .logo{
+    margin-left: 20px;
+    margin-top: 5px;
+    width: 100px;
+    height: 25px;
+    
+}
+
+
+header nav a{
+    text-decoration: none; /*Tira a linha do Link*/
+    color: #AAA; 
+    margin-right: 10px; /*Afasta cada link 10px*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header nav a:hover{
+    color: #FFF;
+}
+
+/*Filme Prinicipal:*/
+
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('/img/capa1.jpg');
+    height: 450px;
+    background-size: cover;
+    box-shadow: 1px 1px 10px 5px black;
+    display: flex;
+    flex-direction: column; /*Agora os elementos estão alinhados como coluna*/
+    justify-content: center;
+    align-items: flex-start;
+    font-family: Arial, Helvetica, sans-serif;
+
+    margin-top: 55px;
+}
+
+.filme-principal .fonte-principal{
+    width: 280px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.filme-principal .descricao{
+    margin-bottom: 40px;
+    margin-top: 15px;
+    text-align:start;
+    max-width: 600px;
+    font-size: 19px;
+}
+
+ .botao{
+    background-color: rgba(27, 26, 26, 0.5); /*Ou (0,0,0,.50)*/
+    border: none;
+    color: white;
+    padding: 15px 30px; /*Para cima e para baixo, Para os lados*/
+    margin-right: 15px;
+    font-size: 12px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, 'sans-serif';
+    cursor: pointer; /*Muda o cursor quando passar o mouse*/
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+    transition: .5s ease all; /*Faz uma pequena animação para quando passar o mouse*/
+}
+
+.botao i{
+    margin-right: 5px;
+}
+
+.wrapper{
+    align-items: center;
+    max-width: 1280px;
+    margin-left: 20px;
+}
+
+.filme-principal .wrapper{
+    width: 45%;
+}
+
+/*Primeiro Carrosel - Minha Lista*/
+
+.minha-lista{
+    margin: 30px;
+    margin-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #AAA
+}
+
+.titulo-lista{
+    margin-bottom: 20px;
+}
+
+.titulo-lista:hover{
+    color: #FFF;
+}
+
+.minha-lista-box{
+    height: 200px;
+    width: 100px;
+    display: block;
+}
+
+/* Segundo Carrosel - Bombando*/
+
+.bombando{
+    margin: 30px;
+    margin-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #AAA;
+}
+
+.titulo-bomba{
+    margin-bottom: 20px;
+}
+
+.titulo-bomba:hover{
+    color: #FFF;
+}
+
+.bombando-box{
+    height: 200px;
+    width: 100px;
+    display: block;
+}
+
+/*Terceiro Carrosel - Séries */
+
+.series{
+    margin: 30px;
+    margin-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #AAA;
+}
+
+.titulo-serie{
+    margin-bottom: 20px;
+}
+
+.titulo-serie:hover{
+    color: #FFF;
+}
+
+.serie-box{
+    height: 200px;
+    width: 99px;
+    display: block;
+}
+
+/*Quarto Carrosel - Originais*/
+
+.originais{
+    margin: 30px;
+    margin-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #AAA;
+}
+
+.titulo-original{
+    margin-bottom: 20px;
+}
+
+.titulo-original:hover{
+    color: #FFF;
+}
+
+.original-box{
+    height: 650px;
+    width: 900px;
+    display: block;
+}
+
+/*Quinto Carrosel - Filmes*/
+.filmes{
+    margin: 30px;
+    margin-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #AAA;
+}
+
+.titulo-filmes{
+    margin-bottom: 20px;
+}
+
+.titulo-filmes:hover{
+    color: #FFF;
+}
+
+.filme-box{
+    height: 200px;
+    width: 100px;
+    display: block;
+}
+
+#telainicial{
+    margin-top: 5px;
+    height: 450px;
+}
+
+.lista-video{
+    visibility: hidden;
+}
+
+/* Dando vida aos botões */
+
+.lista-video:hover{
+    visibility:inherit;
+}
