@@ -1,7 +1,7 @@
 # Clone do Netflix :arrow_forward:	
 
 ## Sobre  :speech_balloon: : 
-Projeto desenvolvido durante o curso "_Recriando a tela inicial da Netflix_" no **Bootcamp HTML WEB Developer**
+Projeto desenvolvido durante o curso "_Recriando a tela inicial da Netflix_" no **Bootcamp HTML WEB Developer**. O projeto conta com algumas modificações como mais 3 carroseis, outros botões e muito mais.
 
 ## Assuntos Abordados: 
 * Responsividade
